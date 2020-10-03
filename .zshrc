@@ -11,6 +11,10 @@ setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_SAVE_NO_DUPS
 setopt HIST_VERIFY
 
+# Globbing configuration
+# Case insensitive globbing since filesystem's alike
+setopt NO_CASE_GLOB
+
 # Completion configuration
 zstyle :compinstall filename "${ZDOTDIR:-$HOME}/.zshrc"
 

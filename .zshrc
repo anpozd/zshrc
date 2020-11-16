@@ -20,3 +20,7 @@ zstyle :compinstall filename "${ZDOTDIR:-$HOME}/.zshrc"
 
 autoload -Uz compinit
 compinit
+
+if [[ -r ${ZDOTDIR:-$HOME}/.env ]] ; then
+    source ${ZDOTDIR:-$HOME}/.env
+fi
